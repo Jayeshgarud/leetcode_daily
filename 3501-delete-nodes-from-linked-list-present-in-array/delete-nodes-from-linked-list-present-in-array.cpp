@@ -16,7 +16,10 @@ public:
 dummy->next = head;
 ListNode* prev=dummy;
 ListNode* curr=dummy->next;
+
+
 while(curr!=nullptr){
+   
     if(st.find(curr->val)!=st.end()){
         prev->next=curr->next;
         curr=curr->next;
