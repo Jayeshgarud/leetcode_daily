@@ -28,16 +28,9 @@ int count = 0;
         temp=temp->next;
     }
     ListNode* tail=temp;
-
-       
-
-      
-      
-        while (count--) {
-
-        n=curr->next;
-
-        prev->next=n;
+while (count--) {
+         n=curr->next;
+         prev->next=n;
         tail->next=curr;
         tail=curr;
         prev=n;
@@ -46,7 +39,6 @@ int count = 0;
             }
     }
     tail->next=nullptr;
-
-    return head;
+return head;
     }
 };
