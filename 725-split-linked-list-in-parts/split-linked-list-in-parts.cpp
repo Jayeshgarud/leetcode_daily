@@ -2,7 +2,7 @@ class Solution {
 public:
     vector<ListNode*> splitListToParts(ListNode* head, int k) {
 
-        // Find length
+       
         int len = 0;
         ListNode* temp = head;
 
@@ -11,10 +11,10 @@ public:
             temp = temp->next;
         }
 
-        // Basic size of each part
+       
         int size = len / k;
 
-        // Extra nodes
+        
         int extra = len % k;
 
         vector<ListNode*> ans;
